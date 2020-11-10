@@ -29,7 +29,7 @@ def values(message: telebot.types.Message):
 
 @bot.message_handler(content_types=['text'])
 def convert(message: telebot.types.Message):
-    values = message.text.split(' ')
+    values = message.text.upper().split(' ')
     if len(values) > 3:
         raise ConvertionException('Слишком много параметров')
 
