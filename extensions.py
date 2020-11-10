@@ -30,4 +30,4 @@ class CurrencyConverter:
         r = requests.get(f'https://api.exchangeratesapi.io/latest?base={quote_ticker}&symbols={base_ticker}')
         total_base = json.loads(r.content)['rates'][keys[base]]
 
-        return total_base
+        return round(float(total_base), 2) * amout
