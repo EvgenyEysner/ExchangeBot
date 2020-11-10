@@ -29,11 +29,11 @@ def values(message: telebot.types.Message):
 
 @bot.message_handler(content_types=['text'])
 def convert(message: telebot.types.Message):
-    values = message.text.upper().split(' ')
-    if len(values) > 3:
+    msg_values = message.text.upper().split(' ')
+    if len(msg_values) != 3:
         raise ConvertionException('Слишком много параметров')
 
-    quote, base, amout = values
+    quote, base, amout = msg_values
     total_base = CurrencyConverter.convert(quote, base, amout)
     text = f'Цена {amout} {quote}/{base}: {total_base}'
 
