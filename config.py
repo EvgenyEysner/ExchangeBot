@@ -7,4 +7,4 @@ keys = {
         'ЗЛОТЫ': 'PLN',
         'КРОНА': 'CZK',
         }
-# TOKEN
+APP_NAME = 'fast-citadel-54214'

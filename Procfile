@@ -1,1 +1,1 @@
-web: python telegram.py
+web: gunicorn run_server: server
