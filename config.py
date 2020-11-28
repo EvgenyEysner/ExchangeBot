@@ -1,4 +1,4 @@
-TOKEN = '1473822720:AAEj6nJvTY0PY2Qpy1peXahsQAqN14sbtUo'
+TOKEN = ''
 
 keys = {
         'ДОЛЛАР': 'USD',
@@ -7,4 +7,4 @@ keys = {
         'ЗЛОТЫ': 'PLN',
         'КРОНА': 'CZK',
         }
-APP_NAME = 'fast-citadel-54214'
+APP_NAME = ''
